@@ -1,10 +1,11 @@
 const express=require('express');
 const app= express();
+const router=express.Router();
 const port="8000"   // in production , we use 80
 
 
 
-
+app.use('/', require('./routes'));
 
 
 app.listen(port,function(err){
