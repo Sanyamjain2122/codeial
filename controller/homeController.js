@@ -1,4 +1,6 @@
 module.exports.home=function(req,res){
    console.log("welcome to home");
-   return res.end('<h1> welcome to home </h1>');
+   return res.render('home',{
+    title: "Codeial Home"
+});
 }
